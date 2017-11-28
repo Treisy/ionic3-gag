@@ -1,0 +1,8 @@
+{
+  "name": "ionci3-gag",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

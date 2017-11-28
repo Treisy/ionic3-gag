@@ -20,8 +20,8 @@
             <ion-input type="text" [(ngModel)]="titulo"></ion-input>
         </ion-item>
 
-        <ion-item>
-            <img src="https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmUfmm5gsspud9SvrsnUwg6cgFUMNQbV8GDhv6uN6QdErd" alt="">
+        <ion-item *ngIf="imagenPreview">
+            <img [src]="imagenPreview" alt="">
         </ion-item>
     </ion-list>
 
@@ -34,7 +34,7 @@
                 </button>
             </ion-col>
             <ion-col>
-                <button ion-button block icon-left>
+                <button ion-button block icon-left (click)="mostrar_camara()">
                     <ion-icon name="camera"></ion-icon>
                     Camara
                 </button>

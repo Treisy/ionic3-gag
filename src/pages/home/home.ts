@@ -14,9 +14,7 @@ export class HomePage {
   posts : Observable < any[] >;
 
   constructor(private modalCtrl : ModalController, private afDB : AngularFireDatabase) {
-    this.posts = afDB
-      .list('post')
-      .valueChanges();
+    this.posts = afDB.list('post').valueChanges();
   }
 
   mostrar_modal() {

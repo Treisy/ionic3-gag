@@ -7,9 +7,27 @@
 </ion-header>
 
 <ion-content>
+    <ion-card>
+        <ion-card-content>
+            <img src="https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmUfmm5gsspud9SvrsnUwg6cgFUMNQbV8GDhv6uN6QdErd" alt="">
+        </ion-card-content>
+
+        <ion-card-header>
+            Post 1
+        </ion-card-header>
+
+        <ion-row>
+            <ion-col text-right>
+                <button ion-button clear small color="primary" icon-left>
+                    <ion-icon name="share-alt"></ion-icon>
+                    Compartir
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
 
     <ion-fab bottom right>
-        <button ion-fab color="danger">
+        <button ion-fab color="danger" (click)="mostrar_modal()">
             <ion-icon name="add"></ion-icon>
         </button>
     </ion-fab>

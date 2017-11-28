@@ -1,6 +1,11 @@
 <ion-header>
 
     <ion-navbar>
+
+        <ion-buttons end>
+            <button ion-button (click)="cerrar_modal()">Cerrar</button>
+        </ion-buttons>
+
         <ion-title>Crear Post</ion-title>
     </ion-navbar>
 
@@ -8,5 +13,32 @@
 
 
 <ion-content padding>
+    <ion-list>
 
+        <ion-item>
+            <ion-label floating>Título</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <img src="https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmUfmm5gsspud9SvrsnUwg6cgFUMNQbV8GDhv6uN6QdErd" alt="">
+        </ion-item>
+    </ion-list>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <button ion-button block icon-left>
+                    <ion-icon name="photos"></ion-icon>
+                    Seleccionar
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button block icon-left>
+                    <ion-icon name="camera"></ion-icon>
+                    Camara
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

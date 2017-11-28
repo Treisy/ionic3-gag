@@ -7,13 +7,13 @@
 </ion-header>
 
 <ion-content>
-    <ion-card>
+    <ion-card *ngFor="let post of posts | async">
         <ion-card-content>
-            <img src="https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmUfmm5gsspud9SvrsnUwg6cgFUMNQbV8GDhv6uN6QdErd" alt="">
+            <img [src]="post.imagen" alt="">
         </ion-card-content>
 
         <ion-card-header>
-            Post 1
+            {{ post.titulo }}
         </ion-card-header>
 
         <ion-row>
